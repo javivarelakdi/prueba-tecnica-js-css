@@ -1,18 +1,61 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <title>Prueba Técnica CSS</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
 
-<head>
-	<title>Parcel Sandbox</title>
-	<meta charset="UTF-8" />
-	<title>Prueba Técnica CSS</title>
-    <link rel="stylesheet" href="./src/styles.css">
-</head>
+  <body>
+    <div id="app">
+      <div class="header">
+        <h1>Unique Element Challenge</h1>
+        <img src="src/assets/logo.svg" alt="Logo" class="logo" />
+      </div>
 
-<body>
-	<div id="app"></div>
+      <div class="content">
+        <div class="left-column">
+          <section>
+            <h2>Target</h2>
+            <div>
+              Find the unique value in the array that is not duplicated. Use the
+              <b>dubbed</b> function to return the unique element.
+            </div>
+          </section>
 
-	<script type="module" src="src/index.js">
-	</script>
-</body>
+          <section>
+            <h2>Considerations</h2>
+            <ul>
+              <li>Values are duplicated only twice.</li>
+              <li>There is only one non duplicate value.</li>
+              <li>
+                The non duplicate value can be placed anywhere on the array.
+              </li>
+              <li>The result must be an integer.</li>
+            </ul>
+          </section>
+        </div>
 
+        <div class="right-column">
+          <div class="test-data">
+            <h2>Test data</h2>
+            <div id="array-data"></div>
+          </div>
+
+          <div class="results">
+            <div class="result-box expected">
+              <h2>Expected result</h2>
+              <div class="result-value">y</div>
+            </div>
+            <div class="result-box actual">
+              <h2>Your result</h2>
+              <div class="result-value">z</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="src/index.js"></script>
+  </body>
 </html>
